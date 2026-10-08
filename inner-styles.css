@@ -9,19 +9,15 @@ body {
 
 
     section.container {
-      background-color: #fff;
+        background-color: #fff;
         width: 780px;
         min-height: 600px;
 
         section.middle {
             display: flex;
 
-            >*{
-                border: 1px solid red;
-            }
-
-            section{
-                &.left-side{
+            section {
+                &.left-side {
                     width: 30%;
                     background-color: #F2F1F1;
                     display: flex;
@@ -29,24 +25,64 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+                    nav {
+                        a {
+                            display: block;
+                            color: black;
+                            text-decoration: none;
+                            border-bottom: 2px solid black;
+                            text-transform: uppercase;
+                            padding: 10px 0px 10px 10px;
+                            font-size: 10px;
 
+                            &:hover {
+                                background-color: white;
+                                color: white;
+                            }
+                        }
+                    }
 
-                    links{
+                    .links {
                         display: flex;
                         flex-direction: column;
-                        border: 1px solid black;
 
                     }
                 }
-                &.right-side{
-                    width:70%;
+
+                &.right-side {
+                    width: 70%;
                     min-height: 600px;
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
+                    padding: 5px 20px;
 
                     nav{
-                        text-align: right;
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 5px;
+                        font-size: 13px;
+
+                        a{
+                            color: black;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &.top-nav{
+                            text-transform: uppercase;
+                        }
+                        &.bottom-nav{
+                            text-transform: lowercase;
+                            font-size: 9px;
+                        }
+                    }
+
+                    main{
+                        border: 1px solid black;
+                        img
                     }
                 }
             }
