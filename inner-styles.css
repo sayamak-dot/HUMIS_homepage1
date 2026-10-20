@@ -55,27 +55,19 @@ body {
                 }
 
                 &.right-side {
-                    width: 70%;
+                    width: 65%;
                     /*min-height: 600px;*/
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
                     padding: 5px 20px;
 
-                    nav {
+                    nav.secondary {
                         display: flex;
                         justify-content: flex-end;
                         gap: 5px;
-                        font-size: 13px;
+                        font-size: 10px;
 
-                        a {
-                            color: black;
-                            text-decoration: none;
-
-                            &:hover {
-                                text-decoration: underline;
-                            }
-                        }
 
                         &.top-nav {
                             text-transform: uppercase;
@@ -86,29 +78,27 @@ body {
                             font-size: 9px;
                         }
 
-
                         a {
                             color: black;
                             text-decoration: none;
                             border-right: 1px solid black;
                             padding-right: 5px;
                             margin-left: 3px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
+                            &:last-of-type{
+                                border-right: none;
+                            }
                         }
                     }
 
                     main {
-                        border: 1px dotted black;
+                        min-height: 600px;
 
-                        img {
-                            max-width: 200px;
-                            float: left;
-                            padding: 0 10px 0 0;
 
-                            &.pull-right {
-                                float: right;
-                                padding: 0 0 0 10px;
-                            }
-                        }
                     }
                 }
             }
@@ -120,7 +110,6 @@ body {
             font-size: 11px;
             text-align: center;
             padding: 10px 0;
-            flex-direction: ;
         }
     }
 }

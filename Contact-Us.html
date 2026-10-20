@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Humis "inner" pages layout</title>
     <link rel="stylesheet" href="inner-styles.css">
     <link rel="stylesheet" href="Typography.css">
+
+    <style>
+        /*local styles */
+        main{
+            nav.inner-nav {
+
+                display: flex;
+                gap: 5px;
+                font-size: 11px;
+                color: var(--burgundy);
+                border-bottom: 2px solid var(--dark);
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+
+
+                a{
+                   color: var(--burgundy);
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            section.content{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h3{
+                    margin: 0;
+                }
+
+                div{
+                    h6{
+                        color: var(--dark);
+                    }
+
+                    p{
+                        margin: 0;
+                    }
+                }
+
+            }
+        }
+        /*main nav.inner-nav {*/
+        /*display: flex;*/
+        /*}*/
+    </style>
+
 </head>
 <body>
 
@@ -50,7 +102,7 @@
 
 
         <section class="right-side">
-            <nav>
+            <nav class="secondary top-nav">
                 <a href="#">Campus directory </a>
                 <a href="#">Department Calendar </a>
                 <a href="#">Contact us </a>
@@ -60,12 +112,66 @@
             </nav>
 
             <main>
-               <h2>Contact Us </h2>
+                <nav class="inner-nav">
+                    <a href="#">Contact information</a>
+                    |
+                    <a href="#">Faculty Directory</a>
+                    |
+                    <a href="#">Staff Directory </a>
+                </nav>
+
+
+                <section class="content">
+                    <h3>Contact Us</h3>
+
+                    <div>
+                        <h6> U.S. MAIL </h6>
+                        <p>
+                            University of Utah<br/>
+                            Department of History<br/>
+                            380 S 1400 E RM 211<br/>
+                            Salt Lake City, UT 84112-0311<br/>
+                        </p>
+                        </div>
+
+                    <div>
+                        <h6>CAMPUS MAIL</h6>
+
+                        <p> Department of History<br/>
+                            211 C HALL<br/>
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h6> PHONE </h6>
+                        <p>(801) 581-6121
+                        </p>
+                    </div>
+
+                    <div>
+                        <h6> FAX</h6>
+                        <p>(801) 585-0580</p>
+                    </div>
+
+                    <div>
+                        <h6> HOURS </h6>
+                        <p>
+                            Monday - Friday<br/>
+                            8:00 AM - 5:00 PM
+                        </p>
+                    </div>
+
+                </section>
+
             </main>
 
-            <nav>
-                Disclaimer Text Only Web master
+            <nav class="secondary bottom-nav" >
+                <a href="#"> Disclaimer </a>
+                <a href="#">Text Only </a>
+                <a href="#"> Web master</a>
             </nav>
+
         </section>
 
     </section>

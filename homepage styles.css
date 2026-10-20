@@ -96,7 +96,7 @@ body {
                     h1{
                         text-transform: uppercase;
                         color: #505A2F;
-                        border-bottom: 2px dashed #var(--uofuRed);
+                        border-bottom: 2px dashed #911f1f;
                         font-size:16px;
                         font-weight: normal;
                     }
