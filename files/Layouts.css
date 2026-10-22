@@ -1,0 +1,81 @@
+section.horizontal-two-column-layout {
+    border: 3px dashed darkgrey;
+    display: flex;
+    min-height: 100%;
+    padding: 10px;
+    gap: 1.5rem;
+
+    aside {
+        border: 1px dotted red;
+
+        &.left-column {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        div.top {
+            div.category {
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    font-size:0.75rem;
+
+                    &.hover{
+                        text-decoration: underline;
+                    }
+
+                    &.active{
+                        font-weight: bold;
+                    }
+
+                }
+
+                    &.sub {
+                        margin-left: 10px;
+
+                        a{
+                            color: red;
+                        }
+                    }
+            }
+        }
+
+        div.bottom {
+
+            p {
+                font-size: 0.5rem;
+
+                span {
+                    display: block;
+
+                    &.name {
+                        font-weight: bold;
+                        font-size: 0.6rem;
+                    }
+
+                    a {
+                        display: block;
+                        color: black;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &.right-column {
+            width: 70%;
+        }
+    }
+}

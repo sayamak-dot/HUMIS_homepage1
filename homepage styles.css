@@ -111,7 +111,7 @@ body {
 
                         a{
                         }
-                        color: #var(--uofuRed);
+                        color: #var (--uofuRed);
                         text-align: right;
                         text-decoration: none;
 

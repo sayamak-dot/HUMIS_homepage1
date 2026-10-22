@@ -41,5 +41,29 @@ body{
     p{
         text-align: justify;
         font-size: 0.75rem;
+
+        &.learn-more{
+            text-align: right;
+        }
+
+        &.learn-more a {
+            text-align: right;
+
+            a. {
+                color: red;
+                text-decoration: none;
+
+                &.hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+            //@TODO come up with better name maybe
+        .shrug{
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            font-weight: bold;
+        }
     }
 }
