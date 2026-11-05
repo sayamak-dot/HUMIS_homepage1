@@ -10,7 +10,7 @@ body {
 
         section.middle {
             padding: 3px 10px;
-            background-image: url('files/uofu_medallion_rt.gif');
+            background-image: url('../files/uofu_medallion_rt.gif');
             background-position: bottom right;
             background-repeat: no-repeat;
 
