@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Humis "inner" pages layout</title>
-    <link rel="stylesheet" href="inner-styles.css">
-    <link rel="stylesheet" href="Typography.css">
+    <link rel="stylesheet" href="stylesheets/inner-styles.css">
+    <link rel="stylesheet" href="stylesheets/typography.css">
 
     <style>
         /*local styles */
@@ -96,8 +96,6 @@
                 </a>
 
             </div>
-
-
         </section>
 
 
@@ -161,7 +159,37 @@
                             8:00 AM - 5:00 PM
                         </p>
                     </div>
+                </section>
 
+
+                <section class="contact-form">
+                    <label>
+                         Name:
+                        <input type="text" name="name" placeholder="Enter your name"/>
+                    </label>
+
+                    <label>
+                            Phone:
+                            <input type="text" name="phone" placeholder="Enter your phone number"/>
+                    </label>
+
+                    <label>
+                        Can we call you?
+                        <input type="checkbox" name="call-via-phone"/>
+                    </label>
+
+                    <p> How would you prefer to be contacted?</p>
+                    <label>
+                        <input type="radio" name="contact-preference" value="email"/> Email<br/>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contact-preference" value="phone"/> Phone<br/>
+                    </label>
+
+                    <button type="submit" name="Submit"
+
+                    </button>
                 </section>
 
             </main>
