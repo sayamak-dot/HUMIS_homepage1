@@ -58,7 +58,6 @@ body {
             padding: 10px 20px 10px 15px;
 
             aside {
-                background-color: white;
 
                 &.left {
                     width: 30%;
