@@ -1,0 +1,119 @@
+@import 'image.css';
+@import 'typography.css';
+@import 'layouts.css';
+
+:root {
+    --green: #676E3D;
+}
+
+body {
+    background-color: #292827;
+    display: flex;
+    justify-content: center;
+
+
+    section.container {
+        background-color: #fff;
+        width: 780px;
+        min-height: 600px;
+
+        section.middle {
+            display: flex;
+
+            section {
+            &.left-side {
+                    width: 30%;
+                    background-color: #F2F1F1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    nav {
+                        a {
+                            display: block;
+                            color: black;
+                            text-decoration: none;
+                            border-bottom: 2px solid black;
+                            text-transform: uppercase;
+                            padding: 10px 0 10px 10px;
+                            font-size: 10px;
+
+                        &:hover {
+                                background-color: white;
+                                color: white;
+                            }
+
+                        &.active {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                .links {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 2rem;
+
+                    }
+                }
+
+            &.right-side {
+                    width: 65%;
+                    /*min-height: 600px;*/
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 5px 20px;
+
+                    nav.secondary {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 5px;
+                        font-size: 10px;
+
+
+                    &.top-nav {
+                            text-transform: uppercase;
+                        }
+
+                    &.bottom-nav {
+                            text-transform: lowercase;
+                            font-size: 9px;
+                        }
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            border-right: 1px solid black;
+                            padding-right: 5px;
+                            margin-left: 3px;
+
+                        &:hover {
+                                text-decoration: underline;
+                            }
+
+                        &:last-of-type{
+                                border-right: none;
+                            }
+                        }
+                    }
+
+                    main {
+                        min-height: 600px;
+
+
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: var(--green);
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+}

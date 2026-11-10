@@ -1,12 +1,10 @@
 section.horizontal-two-column-layout {
-    border: 3px dashed darkgrey;
     display: flex;
     min-height: 100%;
     padding: 10px;
     gap: 1.5rem;
 
     aside {
-        border: 1px dotted red;
 
         &.left-column {
             width: 30%;
@@ -17,6 +15,8 @@ section.horizontal-two-column-layout {
             p {
                 text-align: left;
             }
+
+            border-right: 1px dashed grey;
         }
 
         div.top {
@@ -26,6 +26,7 @@ section.horizontal-two-column-layout {
                     text-decoration: none;
                     color: black;
                     font-size: 0.75rem;
+                    margin-bottom: 0.3rem;
 
                     &.hover {
                         text-decoration: underline;
@@ -40,7 +41,7 @@ section.horizontal-two-column-layout {
                     margin-left: 10px;
 
                     a {
-                        color: red;
+                        color: var(--burgundy);
                     }
                 }
             }
@@ -56,7 +57,7 @@ section.horizontal-two-column-layout {
 
                     &.name {
                         font-weight: bold;
-                        font-size: 0.6rem;
+                        font-size: 0.8rem;
                     }
 
                     a {
@@ -75,6 +76,9 @@ section.horizontal-two-column-layout {
 
         &.right-column {
             width: 70%;
+            h5 {
+                text-decoration: #d50000;
+            }
         }
     }
 }
