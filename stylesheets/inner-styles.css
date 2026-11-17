@@ -1,10 +1,7 @@
 @import 'image.css';
 @import 'typography.css';
 @import 'layouts.css';
-
-:root {
-    --green: #676E3D;
-}
+@import 'colors.css';
 
 body {
     background-color: #292827;
@@ -40,7 +37,7 @@ body {
                             font-size: 10px;
 
                             &:hover {
-                                background-color: white;
+                                background-color: var(--green);
                                 color: white;
                             }
 

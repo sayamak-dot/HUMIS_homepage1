@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 body {
     background-color: #333333;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,17 +72,18 @@ body {
                             text-decoration: none;
                             border-bottom: 2px solid black;
                             text-transform: uppercase;
-                            padding: 10px 0px 10px 10px;
+                            padding: 10px 0 10px 10px;
                             font-size: 10px;
 
                             &:hover {
-                                background-color: white;
+                                background-color: var(--green);
                                 color: white;
                             }
                         }
                     }
+
                     div.links {
-                        margin: 50px  auto 0;
+                        margin: 50px auto 0;
                         width: 153px;
                         text-align: center;
                     }
@@ -89,45 +92,45 @@ body {
                 &.right {
                     width: 60%;
                     float: right;
-                    background-color:white;
+                    background-color: white;
                     padding: 10px;
 
-                    h1{
+                    h1 {
                         text-transform: uppercase;
                         color: #505A2F;
                         border-bottom: 1.5px dashed #d50000;
-                        font-size:16px;
+                        font-size: 16px;
                         font-weight: normal;
                     }
 
-                    p{
+                    p {
                         font-size: 12px;
 
-                        strong{
-                            font-size:110%
+                        strong {
+                            font-size: 110%
                         }
 
 
-                        a{
-                        }
-                        color: #var (--uofuRed);
-                        text-align: right;
-                        text-decoration: none;
+                        a {
+                            color: var(--uOfUred);
+                            text-align: right;
+                            text-decoration: none;
 
-                        &:hover{
-                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        footer {
-            background-color: #686F3E;
-            color: #ffffff;
-            font-size: 11px;
-            text-align: center;
-            padding: 10px 0;
+            footer {
+                background-color: #686F3E;
+                color: #ffffff;
+                font-size: 11px;
+                text-align: center;
+                padding: 10px 0;
+            }
         }
     }
 }
