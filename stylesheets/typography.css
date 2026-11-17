@@ -1,10 +1,10 @@
-
 body {
     font-size: 16px;
 
     h1, h2, h3, h4, h5, h6 {
         color: var(--burgundy);
         margin-top: 0;
+        hyphens: auto;
     }
 
     h1, h2, h3 {
@@ -39,11 +39,16 @@ body {
 
     h5 {
         font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
 
     h6 {
         font-size: 1rem;
         margin-bottom: 0;
+
+        &.margin-bottom {
+            margin-bottom: 1rem;
+        }
     }
 
     p {
