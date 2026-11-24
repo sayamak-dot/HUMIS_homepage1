@@ -91,6 +91,28 @@ section.horizontal-two-column-layout {
                 margin-top: 10rem;
                 font-size: 0.9rem;
             }
+
+            p {
+                &.images {
+                    img {
+                        width: 25%;
+                        height: auto;
+                        float: right;
+                    }
+                }
+
+                &.learn-more {
+                    img{
+                        width: 10%;
+                        height: auto;
+                        float: left;
+                    }
+                }
+            }
+
+
+
+
         }
     }
 }
